@@ -1,2 +1,2 @@
 # Exercícios de vanija.js
-[ https://davimm96.github.io/js-exercises/](Clique aqui para ver)
+[Clique aqui para ver](https://davimm96.github.io/js-exercises/)
