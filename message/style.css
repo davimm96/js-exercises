@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(0, 3, 48);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: blue;
+    font-size: 40px;
+    line-height: 1;
+}
+
+#block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 416px;
+    height: auto;
+    background: rgb(0 0 0 / 31%);
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#block > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#btn-message {
+    font-size: 27px;
+    color: blue;
+    padding: 7px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#btn-message:hover {
+    color: orange;
+    transition: 0.5s;
+}
+
+p {
+    margin-top: 10px;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    #block {
+        width: calc(100% - 10px);
+        padding: 30px 5px 30px 5px;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #btn-message {
+        font-size: 20px;
+    }
+}
