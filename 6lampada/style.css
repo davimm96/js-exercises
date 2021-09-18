@@ -11,20 +11,25 @@ body {
     align-items: center;
     flex-wrap: wrap;
     flex-grow: column;
+    text-align: center;
 }
 
 div {
     width: auto;
     height: auto;
-    text-align: center;
-}
-
-img {
-    cursor: pointer;
 }
 
 #on {
     display: none;
+}
+
+img {
+    cursor: pointer;git 
+    display: block;
+}
+
+h1 {
+    width: 100%;
 }
 
 @media (max-width: 550px) {
