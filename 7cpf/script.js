@@ -3,14 +3,10 @@ let submitCpf = document.querySelector("#submit-cpf")
 let punctuationCpf = document.querySelector("#punctuation-cpf")
 
 submitCpf.addEventListener("click", function(){
-    //const regex = /(\((\d{2})\)\s?)?(\d{4,5})[-]?(\d{4})/gm;
-    //console.log(regex.test('(77) 95684-9783')); //true
-    
     const cpfFinalScore = valueCpf.value.replace(/(\d{3})?(\d{3})?(\d{3})?(\d{2})/, "$1.$2.$3-$4")
-    //console.log(valueCpf.value.replace(/\D|\-/g, ''))
     const regex = /\D|\-|\s/gi
     let test1 = regex.test(valueCpf.value)
-
+    console.log(test1)
     if(valueCpf.value.length == 11 && test1 === false){
         punctuationCpf.innerHTML = cpfFinalScore
     }else {
