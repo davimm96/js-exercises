@@ -1,0 +1,9 @@
+.activeImg {
+    display: block;
+}
+
+img {
+    display: none;
+    border: solid;
+    padding: 15px;
+}
