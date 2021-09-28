@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aumento de salário</title>
+    </head>
+    <body>
+        <h2>Faça um script que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, 
+        baseado no salário atual:</h2>
+        <ul>
+            <li>salários até R$ 280,00 (incluindo) : aumento de 20%</li>
+            <li>salários entre R$ 280,00 e R$ 700,00 : aumento de 15%</li>
+            <li>salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%</li>
+            <li>salários de R$ 1500,00 em diante : aumento de 5%</li> 
+        </ul>
+        <h2>Após o aumento ser realizado, informe na tela:</h2>
+        <ul>
+            <li>o salário antes do reajuste;</li>
+            <li>o percentual de aumento aplicado;</li>
+            <li>o valor do aumento;</li>
+            <li>o novo salário, após o aumento.</li>
+        </ul>
+
+        Digite o seu salário: <input type="number" id="n1" placeholder="280,00">
+        <input type="submit" id="submit">
+        <ul id="result"></ul>
+
+        <script src="script.js"></script>
+    </body>
+</html>
