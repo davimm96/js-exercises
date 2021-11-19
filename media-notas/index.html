@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Média notas</title>
-    </head>
-    <body>
-        <div id="resposta"></div>
-
-        <script src="script.js"></script>
-    </body>
+<meta charset="UTF-8">
+<html>
+ <head>
+    <title>Apostila JavaScript Progressivo</title>
+    <script type="text/javascript" src="script.js"></script>
+ </head>
+ <body onload="main()">
+ </body>
 </html>
+
+
+<script>
+    function main(){
+        var alunos =  parseInt(prompt("Numero de alunos: "))
+        var vetor = new Array(alunos)
+
+        // Preenchendo o veotr
+        for(let count=0; count<alunos; count++)
+            vetor[count] = parseInt( prompt("Aluno " + (count+1) + ":") )
+        
+        // Somando todos os elementos
+        var soma=0
+        for(let count in vetor)
+            soma += vetor[count]
+
+        var media = soma/alunos
+        document.write("Média da turma: " + media)
+    }
+</script>
