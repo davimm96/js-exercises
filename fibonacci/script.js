@@ -5,21 +5,8 @@ let submit = document.querySelector("#submit"),
 submit.addEventListener("click", function(){
     let termo = parseInt(numero.value),
     penultimo = 0, ultimo = 1, n
-    /*
-    //For
-    if(termo <= 2)
-        n = termo -1
-    else{
-        for(let count = 3; count <= termo; count++){
-            n = ultimo + penultimo
-            penultimo = ultimo
-            ultimo = n
-        }
-        res.innerHTML = n
-    }*/
 
     //While
-    
     if(termo <= 2)
         n = termo -1
     else {
@@ -32,4 +19,17 @@ submit.addEventListener("click", function(){
             count++
         }  
     }
+
+      /*
+    //For
+    if(termo <= 2)
+        n = termo -1
+    else{
+        for(let count = 3; count <= termo; count++){
+            n = ultimo + penultimo
+            penultimo = ultimo
+            ultimo = n
+        }
+        res.innerHTML = n
+    }*/
 })
