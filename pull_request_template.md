@@ -1,0 +1,2 @@
+ - [ ] Não usei palavras ofencivas
+ - [ ] Não deletei nenhum arquivo
